@@ -48,9 +48,4 @@
             app:argType="com.example.assignment_25.auth.Entity" />
     </fragment>
 
-    <fragment
-        android:id="@+id/profileFragment"
-        android:name="com.example.assignment_25.ProfileFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
 </navigation>
