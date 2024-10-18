@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">assignment_25</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dashboard_screen">Dashboard Screen</string>
+    <string name="home_screen">Home Screen</string>
+    <string name="profile_screen">Profile Screen</string>
+    <string name="item">item</string>
+    <string name="show_data">show data</string>
+    <string name="more_details_are_available">More details are available</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="welcome_back">Welcome!</string>
+    <string name="toggle_password_visibility">Your password is visible</string>
+    <string name="username">Username</string>
+    <string name="proceed">Proceed</string>
+    <string name="app_logo_description">sample text</string>
+</resources>
