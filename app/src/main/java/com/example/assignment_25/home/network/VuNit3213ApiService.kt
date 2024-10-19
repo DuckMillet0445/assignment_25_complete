@@ -8,10 +8,19 @@ import retrofit2.http.GET
 import retrofit2.http.POST
 import retrofit2.http.Path
 
+// Interface defining API endpoints for VuNit3213
 interface VuNit3213ApiService {
-    @POST("{location}/auth")
-    suspend fun login(@Path("location") location: String, @Body loginRequest: LoginRequest): LoginResponse
 
+    // Endpoint for user login
+    @POST("{location}/auth")
+    suspend fun login(
+        @Path("location") location: String, // Dynamic path segment for location
+        @Body loginRequest: LoginRequest // Request body containing login details
+    ): LoginResponse // Response containing login result
+
+    // Endpoint for fetching dashboard data
     @GET("dashboard/{keypass}")
-    suspend fun getDashboard(@Path("keypass") keypass: String): DashboardResponse
+    suspend fun getDashboard(
+        @Path("keypass") keypass: String // Dynamic path segment for keypass
+    ): DashboardResponse // Response containing dashboard data
 }

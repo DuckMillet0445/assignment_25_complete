@@ -6,11 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".home.details.DetailsFragment">
 
+    <!-- ConstraintLayout to organize UI elements -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp">
 
+        <!-- Title for the details section -->
         <TextView
             android:id="@+id/titleTextView"
             android:layout_width="wrap_content"
@@ -23,8 +25,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginBottom="16dp"/>
 
+        <!-- TextView for displaying the dish name -->
         <TextView
-            android:id="@+id/property1TextView"
+            android:id="@+id/dishNameTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textSize="18sp"
@@ -32,29 +35,57 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="16dp"
-            tools:text="Property 1: Value"/>
+            tools:text="Dish Name: "/>
 
+        <!-- TextView for displaying the origin -->
         <TextView
-            android:id="@+id/property2TextView"
+            android:id="@+id/originTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            app:layout_constraintTop_toBottomOf="@id/property1TextView"
+            app:layout_constraintTop_toBottomOf="@+id/dishNameTextView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp"
-            tools:text="Property 2: Value"/>
+            tools:text="Origin: "/>
 
+        <!-- TextView for displaying the main ingredient -->
+        <TextView
+            android:id="@+id/mainIngredientTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/originTextView"
+            tools:text="Main Ingredient: " />
+
+        <!-- TextView for displaying the meal type -->
+        <TextView
+            android:id="@+id/mealTypeTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mainIngredientTextView"
+            tools:text="Meal Type: " />
+
+        <!-- TextView for displaying the description -->
         <TextView
             android:id="@+id/descriptionTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
             android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/property2TextView"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="16dp"
-            tools:text="Description: Detailed description of the entity"/>
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/originTextView"
+            tools:text="Description: Detailed description of the entity" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

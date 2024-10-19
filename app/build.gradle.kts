@@ -1,11 +1,19 @@
 plugins {
+    // Android application plugin
     alias(libs.plugins.android.application)
+    // Kotlin Android plugin
     alias(libs.plugins.kotlin.android)
+    // Kotlin Compose plugin for Jetpack Compose support
     alias(libs.plugins.kotlin.compose)
+    // Kotlin Parcelize plugin for Parcelable implementations
     id("kotlin-parcelize")
+    // Safe Args plugin for type-safe navigation between fragments
     id("androidx.navigation.safeargs.kotlin")
+    // Kotlin KAPT plugin for annotation processing
     id("kotlin-kapt")
+    // Dagger Hilt plugin for dependency injection
     id("dagger.hilt.android.plugin")
+    // Additional Hilt plugin for Android integration
     id("com.google.dagger.hilt.android")
 }
 
@@ -44,8 +52,8 @@ android {
         jvmTarget = "11"
     }
     buildFeatures {
-        compose = true
-        viewBinding = true
+        compose = true //Enable Jetpack Compose support
+        viewBinding = true // Enable View Binding
     }
 }
 
@@ -61,13 +69,16 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    // Navigation components
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+    // Testing libraries
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
+    // Debugging tools
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
@@ -110,7 +121,7 @@ dependencies {
 
 
 // Material Design
-    implementation("com.google.android.material:material:1.12.0")
+    implementation(libs.material)
 
 
 // AndroidX Activity
@@ -127,5 +138,7 @@ dependencies {
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")
     testImplementation("androidx.arch.core:core-testing:2.1.0")
 
+    // AppCompat and RecyclerView
     implementation("androidx.appcompat:appcompat:1.7.0")
+    implementation(libs.androidx.recyclerview)
 }

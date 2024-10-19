@@ -4,9 +4,13 @@ import com.squareup.moshi.Json
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
+// Data class representing an entity, which is Parcelable for Android inter-process communication
 @Parcelize
 data class Entity(
-    @Json(name = "property1") val property1: String,
-    @Json(name = "property2") val property2: String,
-    @Json(name = "description") val description: String
+    // names of the properties, nullable
+    @Json(name = "dishName") val dishName: String? = null,
+    @Json(name = "origin") val origin: String? = null,
+    @Json(name = "mainIngredient") val mainIngredient: String? = null,
+    @Json(name = "mealType") val mealType: String? = null,
+    @Json(name = "description") val description: String? = null
 ) : Parcelable

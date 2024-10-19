@@ -8,10 +8,12 @@ plugins {
 
 buildscript {
     repositories {
-        google()
+        google() // Repository for Google dependencies
     }
     dependencies {
+        // Plugin for generating type-safe navigation arguments
         classpath("androidx.navigation:navigation-safe-args-gradle-plugin:2.7.7")
+        // Plugin for integrating Dagger Hilt for dependency injection
         classpath("com.google.dagger:hilt-android-gradle-plugin:2.50")
     }
 }

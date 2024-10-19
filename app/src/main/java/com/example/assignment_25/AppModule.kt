@@ -11,6 +11,8 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object AppModule {
+
+    // provides a singleton instance of VuNit3213ApiClient
     @Provides
     @Singleton
     fun provideVuNit3213ApiClient(): VuNit3213ApiClient {
@@ -18,6 +20,7 @@ object AppModule {
 
     }
 
+    // Provides a singleton instance of VuNit3213Repository
     @Provides
     @Singleton
     fun provideVuNit3213Repository(apiClient: VuNit3213ApiClient): VuNit3213Repository {

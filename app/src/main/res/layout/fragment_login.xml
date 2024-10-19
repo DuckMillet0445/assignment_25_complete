@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:padding="24dp">
 
+    <!-- Logo ImageView at the top center of the screen -->
     <ImageView
         android:id="@+id/logoImage"
         android:layout_width="100dp"
@@ -16,6 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:contentDescription="@string/app_logo_description"/>
 
+    <!-- Welcome TextView below the logo -->
     <TextView
         android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
@@ -27,6 +29,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logoImage" />
 
+    <!-- EditText for username input -->
     <EditText
         android:id="@+id/usernameEditText"
         android:layout_width="0dp"
@@ -41,6 +44,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/welcomeText" />
 
+    <!-- EditText for password input -->
     <EditText
         android:id="@+id/passwordEditText"
         android:layout_width="0dp"
@@ -56,6 +60,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/usernameEditText" />
 
+    <!-- ImageView for toggling password visibility -->
     <ImageView
         android:id="@+id/passwordToggle"
         android:layout_width="wrap_content"
@@ -67,6 +72,7 @@
         android:layout_marginEnd="16dp"
         android:contentDescription="@string/toggle_password_visibility"/>
 
+    <!-- Button for login action -->
     <Button
         android:id="@+id/loginButton"
         android:layout_width="0dp"
@@ -81,6 +87,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/passwordEditText" />
 
+    <!-- RadioGroup for selecting location -->
     <RadioGroup
         android:id="@+id/locationRadioGroup"
         android:layout_width="wrap_content"
@@ -91,6 +98,7 @@
         android:layout_marginTop="16dp"
         android:orientation="horizontal">
 
+        <!-- RadioButton for Footscray location -->
         <RadioButton
             android:id="@+id/footscrayRadioButton"
             android:layout_width="wrap_content"
@@ -98,12 +106,14 @@
             android:text="Footscray"
             android:checked="true"/>
 
+        <!-- RadioButton for Sydney location -->
         <RadioButton
             android:id="@+id/sydneyRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sydney"/>
 
+        <!-- RadioButton for ORT location -->
         <RadioButton
             android:id="@+id/ortRadioButton"
             android:layout_width="wrap_content"
@@ -112,6 +122,7 @@
 
     </RadioGroup>
 
+    <!-- ProgressBar for indicating loading state -->
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="wrap_content"

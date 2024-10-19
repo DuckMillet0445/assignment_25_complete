@@ -7,6 +7,7 @@
     android:background="#80CBC4"
     tools:context=".home.ui.HomeScreenFragment">
 
+    <!-- Title TextView for the home screen -->
     <TextView
         android:id="@+id/screenTitle"
         android:layout_width="wrap_content"
@@ -18,6 +19,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.165" />
 
+    <!-- RecyclerView for displaying a list of items -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
