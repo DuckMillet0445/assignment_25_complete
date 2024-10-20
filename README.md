@@ -36,10 +36,26 @@ This app follows the MVVM (Model-View-ViewModel) architecture pattern and uses t
 - ViewModel: Manages UI-related data and business logic
 
 ## API
-This app uses [the assigned API(https://nit3213-api-h2b3-latest.onrender.com/)] for the display data.
+This app uses https://nit3213-api-h2b3-latest.onrender.com/ for the display data.
 
 ## Testing
-[Explain your testing strategy and how to run tests]
+
+Currently, the project includes basic unit tests for core functionality. These can be run using the standard Android Studio test runner.
+
+### Unit Tests
+
+Unit tests are located in the `src/test/java` directory. These tests cover the core logic of the application, including ViewModels, Repositories, and utility classes.
+
+To run unit tests:
+
+1. In Android Studio, right-click on the `src/test/java` folder
+2. Select "Run Tests in 'app'"
+
+Future testing plans include:
+- Expanding unit test coverage to all ViewModels and Repositories
+- Adding instrumented tests for UI interactions
+- Implementing integration tests for API communication
+- Setting up continuous integration for automated testing on each pull request
 
 ## Future Improvements
 - Implement offline caching
