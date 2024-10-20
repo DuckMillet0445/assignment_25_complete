@@ -36,7 +36,7 @@ This app follows the MVVM (Model-View-ViewModel) architecture pattern and uses t
 - ViewModel: Manages UI-related data and business logic
 
 ## API
-This app uses [[API Name](https://nit3213-api-h2b3-latest.onrender.com/)] for the display data.
+This app uses [[the assigned API](https://nit3213-api-h2b3-latest.onrender.com/)] for the display data.
 
 ## Testing
 [Explain your testing strategy and how to run tests]
@@ -53,6 +53,6 @@ This app uses [[API Name](https://nit3213-api-h2b3-latest.onrender.com/)] for th
 [Include your license information here]
 
 ## Contact
-[Jared Alonto] - [s8082665@live.vu.edu.au]
+Jared Alonto - s8082665@live.vu.edu.au
 
 Project Link: [https://github.com/yourusername/recipe-explorer](https://github.com/yourusername/recipe-explorer)
