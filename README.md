@@ -67,4 +67,4 @@ Future testing plans include:
 ## Contact
 Jared Alonto - s8082665@live.vu.edu.au
 
-Project Link: [https://github.com/yourusername/recipe-explorer](https://github.com/yourusername/recipe-explorer)
+Project Link: https://github.com/DuckMillet0445/s8082665_assignment_2
