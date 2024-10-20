@@ -64,10 +64,6 @@ Future testing plans include:
 - More error handling
 - Cleaner UI
 
-
-## License
-[Include your license information here]
-
 ## Contact
 Jared Alonto - s8082665@live.vu.edu.au
 
