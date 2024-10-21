@@ -21,7 +21,7 @@ The app follows the MVVM architecture to ensure a clean separation of concerns a
 
 ## Installation
 
-1. Clone the repository: git clone [repository-url]
+1. Clone the repository: git clone https://github.com/DuckMillet0445/assignment_25_complete
 2. Open the project in Android Studio.
 3. Sync the project with Gradle files.
 
