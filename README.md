@@ -13,7 +13,7 @@ Features
 - **Dagger Hilt** for dependency injection
 - **Kotlin Coroutines** for asynchronous operations
 - **Material Design** for consistent UI
-- **Unit and UI Testing** with JUnit and Espresso
+- **Unit and UI Testing** with JUnit and MockK
 
 ## Architecture
 
