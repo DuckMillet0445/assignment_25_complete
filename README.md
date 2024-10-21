@@ -3,6 +3,7 @@
 ## Overview
 
 This is an Android application built using Jetpack Compose, Retrofit, and Dagger Hilt. The app features a login screen, a dashboard, and detailed views.
+
 **Note**: This app was developed in Android Studio Ladybug | 2024.2.1. Please download the latest version for best compatability.
 
 Features
